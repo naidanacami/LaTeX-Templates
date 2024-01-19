@@ -1,0 +1,37 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[letterpaper, margin=1.24cm]{geometry}
+% https://www.mathcha.io/editor
+
+%%% --------------- Requirements --------------- %%% 
+\input{req/.info.tex}
+\usepackage{req/preamble}
+\usepackage{req/tcolourbox}
+\usepackage{req/table_of_equations}
+\usepackage{cleveref, theoremref}
+\usepackage[
+    style=ieee,
+    backend=biber,
+]{biblatex}                     % For citations
+\addbibresource{References.bib} % Biliography file
+%%% --------------- Optionals --------------- %%% 
+% \usepackage[moderate]{savetrees}  % Shortens page: https://www.ctan.org/pkg/savetrees?lang=en
+% \usepackage{req/.darkmode}
+
+
+%%% --------------- Begin document --------------- %%% 
+\begin{document}
+
+%%% --------------- Titlepage --------------- %%% 
+    \title{\Large{\textbf{\class}}}
+    \author{\href{mailto:\email}{\name}}
+    \date{\titleDate}
+\maketitle
+\tableofcontents
+\newpage
+
+%%% --------------- Content --------------- %%% 
+
+
+
+
+\end{document}
