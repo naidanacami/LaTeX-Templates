@@ -107,10 +107,11 @@
 % PROOF
 %================================
 \renewcommand{\qedsymbol}{}
-\newcommand{\pf}[2]{\begin{myproof}[#1]#2\end{myproof}}
+\newcommand{\pf}[2]{\begin{myproof}[#1]\begin{adjustwidth}{3em}{0em}#2\end{adjustwidth}\end{myproof}}
 \newcommand{\getCurrentSectionNumber}{\getcurrentref{section}}
 \newenvironment{myproof}[1][\proofname]{%
-	\proof[\bfseries #1: ]%
+	\setlength{\parindent}{0pt}%
+	\proof[\bfseries #1: ]\mbox{}
 }{\endproof}
 
 
